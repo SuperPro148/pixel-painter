@@ -1,13 +1,11 @@
 function load(sizeX, sizeY) {
 	let posArray = []
 	for (i=0;i<sizeX;i++) {
-		let i20 = i * 20
-		let posAdd = `.c${i} {left: ${i20}px}`
+		let posAdd = `.c${i} {left: ${i * 20}px}`
 		posArray.push(posAdd)
 	}
 	for (i=0;i<sizeY;i++) {
-		let i20 = i * 20
-		let posAdd = `.l${i} {top: ${i20}px}`
+		let posAdd = `.l${i} {top: ${i * 20}px}`
 		posArray.push(posAdd)
 	}
 	document.getElementById("positions").innerHTML = posArray.join(" ")
